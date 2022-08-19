@@ -9,15 +9,15 @@ import java.math.BigDecimal;
 @Entity
 @Table(name = "registro_recebimento")
 public class RecebimentoModel {
-@Id
+    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long indice;
-@Column(length = 100, nullable = false)
+    @Column(length = 100, nullable = false)
     private String formaDeRecebimento;
-    @Column(length = 10, nullable = false)
+    @Column(name = "valor_a_receber", length = 100, nullable = false)
     private BigDecimal valorAReceber;
-@Column(length = 10, nullable = false)
+    @Column(name = "desconto_recebimento", length = 100, nullable = false)
     private BigDecimal descontoRecebimento;
-@Column(length = 10, nullable = false)
+    @Column(name = "valor_recebido", length = 10, nullable = false)
     private BigDecimal valorRecebido;
 }
