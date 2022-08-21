@@ -29,6 +29,7 @@ public class RecebimentoService {
         BigDecimal valor = recebimentoFactory.calculoRecebimento(recebimentoModel.getFormaDeRecebimento()).calculoRecebimento(recebimentoModel);
         BigDecimal desconto = recebimentoModel.getValorAReceber().subtract(valor);
         recebimentoModel.getIndice();
+        recebimentoModel.getFormaDeRecebimento();
         recebimentoModel.getValorAReceber();
         recebimentoModel.setDescontoRecebimento(desconto);
         recebimentoModel.setValorRecebido(valor);
@@ -41,6 +42,7 @@ public class RecebimentoService {
         BigDecimal valor = recebimentoFactory.calculoRecebimento(recebimentoModel.getFormaDeRecebimento()).calculoRecebimento(recebimentoModel);
         BigDecimal desconto = recebimentoModel.getValorAReceber().subtract(valor);
         recebimentoModel.getIndice();
+        recebimentoModel.getFormaDeRecebimento();
         recebimentoModel.getValorAReceber();
         recebimentoModel.setDescontoRecebimento(desconto);
         recebimentoModel.setValorRecebido(valor);
